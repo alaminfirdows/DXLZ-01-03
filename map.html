@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="map"></div>
+
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var devxpart = {
+                lat: 23.872513,
+                lng: 90.3168673
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 7,
+                    center: devxpart
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: devxpart,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpGopxheIUK0nGVv2X3jqA4Hf8gKYzleE&callback=initMap">
+    </script>
+</body>
+
+</html>
