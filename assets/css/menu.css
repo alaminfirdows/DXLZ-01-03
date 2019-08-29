@@ -1,0 +1,22 @@
+.nav {
+    background: #dedede;
+    text-align: center
+}
+
+.nav__menu {
+    list-style-type: none;
+}
+
+.nav__menu__item {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.nav__menu__item a {
+    text-decoration: none;
+    color: #040404;
+}
+
+.nav__menu__item a:hover {
+    color: #e92f00
+}
