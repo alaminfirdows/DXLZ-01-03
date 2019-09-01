@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            background: green;
+            height: 300px;
+            width: 300px;
+            transition: all .3s;
+        }
+
+        .box__mask {
+            background: white;
+            height: 300px;
+            width: 300px;
+            transition: all .3s;
+            opacity: 0.2;
+        }
+
+        .box:hover .box__mask {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box__mask"></div>
+    </div>
+</body>
+
+</html>

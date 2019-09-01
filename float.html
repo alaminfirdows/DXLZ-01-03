@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 1px solid #ddd;
+            height: 400px;
+        }
+
+        .child1,
+        .child2 {
+            border: 1px solid red;
+            height: 300px;
+            width: 200px;
+        }
+
+        .child1 {
+            float: left;
+        }
+
+        .child2 {
+            float: right;
+        }
+
+        .child {
+            border: 1px solid red;
+            height: 30px;
+            width: 20px;
+            float: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="child1">A</div>
+        <div class="child2">
+            B
+            <div class="child">C</div>
+        </div>
+    </div>
+</body>
+
+</html>
