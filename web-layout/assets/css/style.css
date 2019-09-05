@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #dddddd;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    min-height: 500px;
+}
+
+.sidebar {
+    background: rgba(255, 250, 203, 1);
+    text-align: left;
+    padding: 20px;
+    width: 20%;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.main-content {
+    background: rgb(129, 252, 241);
+    text-align: center;
+    padding: 20px;
+    width: 79%;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.footer {
+    background: #dddddd;
+    text-align: center;
+    padding: 10px;
+}
